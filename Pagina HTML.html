@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nome Cognome</h1>
+    </header>
+
+    <section>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAZlBMVEX///8AAABGRkbd3d3s7OyDg4PQ0NCxsbGfn58cHBz29vY4ODjw8PCbm5v5+flfX1+KioorKytwcHDm5uZra2vGxsaTk5Oqqqq+vr4mJibX19d9fX0wMDALCwtPT08RERE/Pz9XV1cnDX37AAAFDklEQVRoge1a65aiMAxGkKvcrAoMCuj7v+Q2LYwj0qQUZ9lzlu/XnJE2bZLmblkbNmzYsGHD/400ci5lkbsceVFenCj9W5S9hB12IxxY4v064b1/HtN94uzvf49yWmUDnbBlblL6HGVyZW04/D+rfkcA++AmCdjMd+IXGmns+MyWv96Cz18/Lr4k5cCJpr+InEDS/yriz9IOBGO7vMY/q/NOCCX4IGlPMLzzdb71xTFvn9L96CoekxZpQV48xKtCOvPgwV5NMGOvKGjgtB+4fCle0GneopN4k+VS2jnsYqA/AazLl9EGe3Z0TFY6R7B5C0hH9pIN4OC2sdpFoGqF6WrLKkDtTKnbZuJ+IoG7my09L6Ut1c5IbKDnyTLakrqBzpfL5D2gMHnv3sKH8g0Q3kxbB4p+/ARtyzrOVnnwJUa25R0OeJk5CzwtRd/XnlfTcUswk/Hcf2f4F07yGOK2R0LwiHuZmz5tftYG9WPVKHY+VNjXp2aGwYhD/OO6lSTvGWPZXf7dYgEWv0yoG9cVuH4mIkw7VyfxTXSqziHhd+HtaNqMPY9TkZhJZA3ui5gdd4ebBZ/HtHoRNTBJ/Svo2f1Nwxzg/kO9ihDkN9IbdnG4tzv1g4venV/9ppPLVFzVlT8Gam+ToHLnCo++iB4Z4odq1b0BcHelzuek5QDssS0eaHBgI2KHY9Mq5yP7V7jFByuu5K2NPqEeZ0RyNuEirsjBAx0XjVyO36xDre6pU4sM2ELR9pBwNyCVJlOzDcJwyrfxB8NUv7Wk2LjCtKrfGB0SMoQAHWBgvPWRa0mkBzWBmNtVwjfF3MqqPuEHO+BGLkKcn4Nab4kHcnZu3/FYjhNoVcfzNIxUptaqtKWkdkEEs5A4qNMFXVwitnsh28H24+lDgbyHhQoHrxgPZ3LsdMueGnAVT9tczI48dIyMWjI+IlKaeEkK/YExbhlxztQG5bvTYIJZRhyMO+VSlaZdgziqcGAFqGACecmkwmFPzaKyLiLDI58aZmQseTelBWTEUySNDGZeAUiNJafSatK8Yo5FAKoG14kv0itVA6AdC+ZSJZB0CXc74FLxrbFgogcT1fTXRFFU5Ik4hQ4m0DCqRykTcr8WoUFc+zJdpwpedBiFBpAD6r4ucbDb1u5bTgei+6IVQGKhs0BUXZ9ttCfC9lrh6zRCZ8JvOm73TnhA5xLmj6KNpkv10FFs3bK6fKMq875Ks8uU3NdKl9SJYsxkGWi6uVbnsjTEFM9JK1FUpsiVkHTmKZ9L6gnGhJOJql6KrCgOpK4kja+V5N0JzdMrDkyXRWIQqk5L0QeFbN9Zr1kWmSoIRcfpLScQwTGP47vrFoQmSmExdJC1K/9Q3/8aHVS3FPZeBBQdLu1WqrjmyFLpFwHfyp9sHm1J/aeRnlH+HBd+Aw2vMUK5G++gXfh9LXmjoZMKLyHVrJL3ayjIWXaYS/t11bxi/882R0lnaFNwnrKa2+b40eDpDNtrXGu772PMavA8W1tgHYyGP/aDrZrf2hqaeunduKcZyJjNoKknZZ3DGRrDJnTUAFWjdmafBLAFswd8A2bYyJUMa5D6N4VaLDftyIppowUdVXCFps17ObagEwIoAJGF8djCqgMb1qqjKta6QzrrjietO5i17kiaNQzjhXrDeCKZ+9gwHkCOITb0GGIjjvnJMURr3QFMa9XRU0FjvaFbgfXGjXusNmjdY70R8w0bNmzYsOEfxR8PmTkhbtZ4ugAAAABJRU5ErkJggg==" alt="Immagine profilo">
+        <p>Bio: Breve descrizione di me...</p>
+        <p>Skills: Linguaggi di programmazione conosciuti, esperienze lavorative...</p>
+        <p>Contatti social: <a href="link_al_social">Social</a></p>
+    </section>
+
+    <section>
+        <h2>Contattami</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById('email').value;
+            if (!email.includes('@')) {
+                alert('Inserisci un indirizzo email valido.');
+                return false;
+            }
+            // Altre eventuali validazioni possono essere aggiunte qui
+            return true;
+        }
+    </script>
+
+</body>
+</html>
